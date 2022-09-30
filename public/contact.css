@@ -1,0 +1,110 @@
+.quotecss h3
+{
+    text-align: center;
+    font-size: 4vw;
+    line-height: 4vw;
+    background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    rgb(27, 236, 48) 15%,
+    #44107a 29%,
+    rgb(155, 26, 79) 45%,
+    #ff1361 67%,
+    rgb(226, 195, 244) 75%,
+    #fff800 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+}
+.quotecss p {
+    font-size: 3vw;
+    line-height: 3vw;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+/*Quote Div CSS*/
+.quotecss {
+    text-align: center;
+    font-size: 3vw;
+    line-height: 3vw;
+}
+
+/*Maps,Address & Whatsapp Icon Big Div CSS*/
+.addressdiv {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.addressdiv div {
+    float: left;
+    width: 33.33%;
+    height: auto;
+}
+@media screen and (max-width: 550px) {
+    .addressdiv div {
+      width: 100%;
+    }
+  }
+
+.qrcode {
+    height: 200px;
+    width: 200px;
+}
+/*Social Media Icon CSS*/
+.socialicon {
+    text-align: center;
+}
+.socialicon h3 {
+    font-size: 2.2vw;
+    line-height: 2.2vw;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 100%;
+}
+
+.fa:hover {
+        opacity: 0.5;
+}
+/*
+.fa-facebook {
+    background: #3B5998;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+}
+
+.fa-google {
+    background: #dd4b39;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+}
+
+.fa-youtube {
+    background: #bb0000;
+}
+
+.fa-instagram {
+    background: #125688;
+}*/

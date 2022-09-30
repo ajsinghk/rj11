@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+  }
+  /*Education Div Name  Element*/
+  @import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
+  .black-lives-matter {
+    text-align: center;
+    font-size: 8vw;
+    line-height: 8vw;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    background: url(https://raw.githubusercontent.com/s1mpson/-/master/codepen/black-lives-matter/victim-collage.png);
+    background-size: 40%;
+    background-position: 50% 50%;
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,0.08);
+    animation: zoomout 10s ease 500ms forwards;
+  }
+  
+  @keyframes zoomout {
+    from {
+      background-size: 40%;
+    }
+    to {
+      background-size: 10%;
+    }
+  }
+/*Marquee CSS*/
+  .blink {
+    animation: blinker 2.5s linear infinite;
+    color:rgb(67, 18, 200);
+    font-family: sans-serif;
+}
+.blink:hover{
+  animation: blinker 0.5s ease-in-out infinite;
+  
+}
+.immanuel {
+  padding-right: 50px;
+  text-align: right;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+  /*All Eduaction Details Big Div Element*/
+  .edubiggestdiv {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+    /* Should be removed. Only for demonstration */
+  }
+  /* Photo Section and Education Div Width Define here*/
+  .left {
+    width: 20%;
+  }
+  
+  .right {
+    width: 80%;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .column {
+      width: 100%;
+    }
+  }
+/*Photo Section CSS here*/
+.photondskill {
+  padding: 0px 0px 0px 0px;
+  padding-bottom: 0px;
+  height: auto;
+  }
+.photoname {
+  float: left;
+  height: auto;
+  width: 100%;
+}
+.photoname img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  padding: 5px;
+  height: 150px;
+  width: 150px;
+}
+.photoname img:hover{
+  transform: scaleX(-1);
+  box-shadow: 0 0 2px 1px rgba(116, 57, 18, 0.5);
+}
+.hide {
+  display: none;
+  text-align: center;
+}
+.photoname img:hover + .hide {
+  display: block;
+  color: rgb(136, 111, 203);
+}
+.photoname h3 {
+  text-align: center;
+  font-family: 'Cedarville Cursive';
+}
+.skilldiv {
+  margin-top: 0px;
+  text-align: center;
+  float: left;
+  height: 50px;
+  width: 100%;
+  }
+.webskill {
+  float: left;
+  width: 100%;
+  height: auto;
+
+}
+@media screen and (max-width: 800px) {
+  .webskill {
+    width: 35%;
+  }
+  .photoname {
+    width: 30%;
+  }
+  .skilldiv {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .webskill {
+    width: 50%;
+  }
+  .photoname {
+    width: 100%;
+  }
+  .skilldiv {
+    width: 100%;
+  }
+}
+.webskill h3 {
+  text-align: center;
+}
+.webskill ul {
+  list-style-type: none;
+}
+.webskill img{
+  height: 20px;
+  width: 20px;
+}
+
+/*
+.languagskill {
+  height: 150px;
+}
+.databaseskill {
+  height: 100px;
+}
+.frontendskill {
+  height: 150px;
+  background-color: rgb(104, 169, 114);
+}
+.devtoolskill {
+  height: 200px;
+  background-color: rgb(103, 35, 35);
+}*/
+  
+  /*Education Big Div CSS here*/
+  .bigedusec {
+    padding: 0px;
+  }
+  
+  /*Media Queries for Small Educational Div Element*/
+  .smalledudiv {
+    padding: 10px;
+    float: left;
+    width: 50%;
+    height: 250px;
+  }
+  /*Responsiv layout for small Educational Div Element*/
+  @media screen and (max-width: 500px) {
+    .smalledudiv {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+
+/*Font Size for Small Education Div*/
+.tenth2 h1 {
+  font-size: 4vw;
+  line-height: 4vw;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-timing-function: linear;
+}
+.tenth2 h1:hover{
+  transform: rotate(-20deg);
+}
+.tenth2 h3 {
+  font-size: 3vw;
+  line-height: 3vw;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-timing-function: ease;
+}
+.tenth2 h3:hover{
+  transform: rotate(40deg);
+}
+.tenth2 p {
+  font-size: 2vw;
+  line-height: 2vw;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-timing-function: ease-in;
+}
+.tenth2 p:hover{
+  transform: rotate(15deg);
+}
+.tenth2 h4 {
+  font-size: 1.7vw;
+  line-height: 1.5vw;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-timing-function: ease-in-out;
+}
+.tenth2 h4:hover{
+  transform: rotate(-50deg);
+}
+@keyframes mymove {
+  from {right: 0px;}
+  to {right: 200px;}
+}
+  /*10th class Div */
+  .tenth2 {
+    text-align: center;
+  }
+  
+  .imagecss {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+  }
+  @media screen and (max-width: 500px) {
+    .imagecss {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .iitmimage {
+    border-radius: 50%;
+  }
+  .vmouimage {
+    border-radius: 50%;
+  }
+
+  
